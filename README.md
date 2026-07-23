@@ -30,3 +30,12 @@ PoW判定）、[kotoba-lang/btc-crypto](https://github.com/kotoba-lang/btc-crypt
 ```
 clojure -M:test
 ```
+
+`src/mining_pool/bounded_vardiff.kotoba` は `mining-pool.vardiff/adjust-difficulty`
+の capability-free Kotoba プロファイル（`current`/`observed-seconds-per-share`/
+`target-seconds-per-share`/`max-adjust-factor` の4引数、f64 clamp 演算のみ）。
+`min-difficulty` は Stratum 標準の下限 1.0 に固定しており一般引数としては
+持たない — 詳細と、5引数以上の `:f64` 関数が Wasm へ誤コンパイルされる
+コンパイラ側の既知の制約は [migration/bounded-vardiff-v1.edn](migration/bounded-vardiff-v1.edn)
+を参照。`vardiff.cljc` はプロトコル/共有ledger連携を含む一般オラクルとして
+そのまま残る。
