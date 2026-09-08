@@ -5,7 +5,7 @@
   hardened network daemon). Uses kotoba-lang/json rather than re-deriving a
   JSON parser."
   (:require [kotoba.lang.json :as json]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn encode-line
   "Encode a Stratum message map to a newline-terminated JSON string (the
