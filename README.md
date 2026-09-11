@@ -28,7 +28,7 @@ PoW判定）、[kotoba-lang/btc-crypto](https://github.com/kotoba-lang/btc-crypt
 ## Test
 
 ```
-clojure -M:test
+kbb -M:test
 ```
 
 `src/mining_pool/bounded_vardiff.kotoba` は `mining-pool.vardiff/adjust-difficulty`
