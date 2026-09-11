@@ -1,6 +1,6 @@
 {:schema "kotoba-mining-pool-migration/v1"
  :profile :mining-pool/bounded-vardiff-v1
- :legacy {:engine "src/mining_pool/vardiff.cljc"
+ :legacy {:engine "src/mining_pool/vardiff.cljk"
           :status :retained-general-oracle}
  :canonical {:engine-and-conformance "src/mining_pool/bounded_vardiff.kotoba"}
  :domain {:function :adjust-difficulty
