@@ -1,5 +1,5 @@
 (ns mining-pool.ledger-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [mining-pool.ledger :as l]))
 
 (def ^:private ledger
