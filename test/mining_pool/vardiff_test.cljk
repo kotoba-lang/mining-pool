@@ -1,5 +1,5 @@
 (ns mining-pool.vardiff-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [mining-pool.vardiff :as v]))
 
 (deftest increases-when-shares-arrive-too-fast

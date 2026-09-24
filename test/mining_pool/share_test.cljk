@@ -3,7 +3,7 @@
   artificially-easy target — this repo's mining scope is CPU/education, see
   the ADR): accept/reject at various share-difficulty thresholds, and the
   independent :block? check against the job's network bits."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [btc-mining.core :as m]
             [mining-pool.share :as s]))
 
